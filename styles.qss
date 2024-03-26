@@ -1,0 +1,207 @@
+
+QMainWindow {
+    background: #000000;
+    border-radius: 20px;
+}
+
+QLabel {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/* Scroll Area Styling */
+QScrollArea {
+    border: 0px solid;
+}
+
+QScrollArea QWidget#scrollAreaWidgetContents {
+    background: #000000;
+    border: none;
+}
+
+QScrollArea QScrollBar:vertical, QScrollArea QScrollBar:horizontal {
+    width: 0px;
+    height: 0px;
+}
+
+/* Tab Widget Styling */
+QTabWidget::pane {
+    border-top: 2px solid #212225;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #000000;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+QTabBar::tab {
+    background: #212225;
+    color: #BBBCBD;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5px;
+    min-width: 140px;
+    min-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+QTabBar::tab:selected {
+    background: #1196FF;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 3px;
+}
+
+QTabBar::tab:hover {
+    background: #72757e;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 3px;
+}
+
+/* Button Styling */
+QPushButton {
+    border: 1px solid #1196FF;
+    color: #71B7FB;
+    border-radius: 10px;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: rgba(114, 117, 126, 0.5);
+}
+
+QPushButton:Pressed {
+    background-color: rgba(127, 95, 240, 0.6);
+}
+
+#SaveButton {
+    min-width: 190px;
+}
+
+/* Input Fields Styling */
+QLineEdit, QComboBox {
+    background-color: #212225;
+    color: #fffffe;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url(resources/menubarsicon.svg);
+    width: 16px;
+    height: 16px;
+}
+
+/* CheckBox Styling */
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background: #212225;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(unchecked_checkbox_icon.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(resources/checkmark.svg);
+}
+
+QCheckBox::indicator:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* File Choose Button */
+#ChooseFileButton {
+    border: 2px dashed #1196FF;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+QPushButton#ChooseFileButton:hover {
+    background-color: #162432;
+}
+
+QPushButton#ChooseFileButton:pressed {
+    background-color: rgba(127, 95, 240, 0.6);
+}
+
+/* Labels */
+#OverlayAdjustmentLabel, #OverlayNameLabel, #OverlayHotkeyLabel {
+    font-weight: bold;
+}
+
+/* Expand Button Styling */
+QPushButton#OverlayAdjustmentExpandButton {
+    border: 0px;
+    color: #BBBCBD;
+    background-color: #212225;
+}
+
+QPushButton#OverlayAdjustmentExpandButton[expanded="true"] {
+    color: #ffffff;
+}
+
+/* Error Feedback Output */
+QLabel#ErrorFeedbackOutput {
+    color: #1196FF;
+    font-weight: bold;
+    background-color: #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 12px;
+}
+
+/* QMessageBox Styling */
+QMessageBox {
+    background-color: #212225;
+    color: #FFFFFF;
+}
+
+QMessageBox QLabel {
+    color: #FFFFFF;
+}
+
+QMessageBox QPushButton {
+    border: 1px solid #1196FF;
+    background-color: #212225;
+    color: #71B7FB;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: rgba(114, 117, 126, 0.5);
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: rgba(127, 95, 240, 0.6);
+}
+
+
+
+
